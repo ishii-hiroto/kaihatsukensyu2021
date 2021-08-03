@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>アンケート</title>
+  </head>
+  <body>
+    <h1>お客様アンケート</h1>
+      <form method='get' action='receive.php'>
+            <p>
+                お客様のお名前を入力してください。
+            </p>
+          	<input type="text" name="title" size="20" maxlength="28" value="ここにメッセージを入力" />
+            <p>
+            <p>
+                お客様がご契約されている内容を選択してください。
+            </p>
+                <input type="radio" name="test" value="test1" checked="checked" />無料トライアル
+                <input type="radio" name="test" value="test2" />短期契約
+                <input type="radio" name="test" value="test3" />長期契約
+            <p>
+                感想を以下から選択してください。(必須)
+            </p>
+                <select name="test">
+                    <option value="test1" selected="selected">良い</option>
+                    <option value="test2">普通</option>
+                    <option value="test3">悪い</option>
+                </select>
+            <p>
+                ご質問があれば以下に入力してください。(任意)
+            </p>
+                <textarea name="txt" rows="5" cols="20">テキストエリア</textarea>
+            <p>
+                関心があるものを選択してください。(複数選択可能)
+            </p>
+                <input type="checkbox" name="test" value="test1" checked="checked" />ゲーム
+                <input type="checkbox" name="test" value="test2" />観光
+                <input type="checkbox" name="test" value="test3" checked="checked" />睡眠
+
+        	<p>
+                入力が完了しましたら以下のボタンを押してください。
+            </p>
+            <input type="button" name="btn1" value="送信ボタン">
+            <p>
+                訂正がある場合は以下のボタンを押してください。
+            </p>
+            <input type="reset" name="btn2" value="取り消しボタン" >
+      </form>
+  </body>
+</html>
