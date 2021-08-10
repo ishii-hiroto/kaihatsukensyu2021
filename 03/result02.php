@@ -1,23 +1,33 @@
-<?php
-//ゴールド会員
+<!DOCTYPE>
+<html>
+    <head>
+          <meta charset='utf-8'>
+          <meta name='viewport' content='width=device-width, initial-scale=1'>
+          <title>ログイン</title>
+    </head>
+    <body>
+    <?php
+    //ゴールド会員
 
-    $gold_id = "4321";
-    $gold_ps= "1234";
+        $gold_id = "4321";
+        $gold_ps= "1234";
 
-    if($_POST['id'] == $gold_id AND $_POST['ps'] == $gold_ps){
-        echo "ようこそゴールド会員様！！ログイン成功";
-    } else {
-        echo "ログイン失敗";
-    }
+        if($_POST['id'] == $gold_id AND $_POST['ps'] == $gold_ps){
+            echo "ようこそゴールド会員様！！ログイン成功";
+        } else {
+            echo "ログイン失敗";
+        }
 
-//ノーマル会員
+    //ノーマル会員
 
-    $reg_id = "qwer";
-    $reg_ps= "rewq";
+        $reg_id = "qwer";
+        $reg_ps= "rewq";
 
-    if($_POST['id'] == $reg_id AND $_POST['ps'] == $reg_ps){
-        echo "ようこそノーマル会員様！！ログイン成功";
-    } else {
-        echo "ログイン失敗";
-    }
-?>
+        if($_POST['id'] == $reg_id AND $_POST['ps'] == $reg_ps){
+            echo "ようこそノーマル会員様！！ログイン成功";
+        } else {
+            echo "ログイン失敗";
+        }
+    ?>
+    </body>
+</html>
