@@ -6,16 +6,16 @@
     </head>
     <body>
         <form method='get' action='loop02.php'>
-            <input type="number" name="cols0" >行×
-            <input type="number" name="cols1" >行<br>
+            <input type="number" name="cols" >行×
+            <input type="number" name="rows" >列<br>
             <input type="submit" name="button" >
             <input type="reset" name="button2" >
         </form>
         <table border="1">
             <?php
-                for($i=0; $i < $_GET['cols0']; $i++){
+                for($i=0; $i < $_GET['cols']; $i++){
                     echo "<tr>";
-                    for($r=0; $r < $_GET['cols1']; $r++){
+                    for($r=0; $r < $_GET['rows']; $r++){
                         echo "<td>佐野</td>";
                     }
                     echo "</tr>";
